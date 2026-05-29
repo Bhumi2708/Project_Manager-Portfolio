@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiggy Onboarding Audit — Improved Version</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    margin: 0;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+h1 {
+    color: #FC8019;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+h2 {
+    color: #FC8019;
+    margin-top: 40px;
+    border-bottom: 2px solid #FC8019;
+    padding-bottom: 8px;
+}
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+.metric-card {
+    background: #fff7ef;
+    border: 1px solid #ffd4ac;
+    padding: 20px;
+    border-radius: 12px;
+}
+.metric-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FC8019;
+}
+.callout {
+    background: #fff7ef;
+    border-left: 5px solid #FC8019;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #e6e6e6;
+    padding: 14px;
+    text-align: left;
+}
+th {
+    background: #fff3e6;
+}
+.badge {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #FC8019;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.section {
+    margin-top: 50px;
+}
+.small {
+    color: #666;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Swiggy Onboarding Audit</h1>
+<p><strong>Bhumika Gujar</strong> · Aspiring Product Manager</p>
+
+<div class="callout">
+<strong>Core Insight:</strong><br>
+Swiggy’s onboarding flow is visually polished but delays value delivery until Step 6. Users are asked for login, OTP, and location permissions before seeing restaurants, increasing activation friction and early abandonment risk.
+</div>
+
+<div class="section">
+<h2>Executive Dashboard</h2>
+
+<div class="metric-grid">
+<div class="metric-card">
+<div class="metric-value">~35%</div>
+<div>Estimated Pre-Feed Drop-off</div>
+</div>
+
+<div class="metric-card">
+<div class="metric-value">+12%</div>
+<div>Activation Uplift Potential</div>
+</div>
+
+<div class="metric-card">
+<div class="metric-value">P0</div>
+<div>Highest Priority Fix</div>
+</div>
+
+<div class="metric-card">
+<div class="metric-value">2 Weeks</div>
+<div>Suggested Experiment Runtime</div>
+</div>
+</div>
+
+<p class="small">
+Directional estimates based on public onboarding benchmarks and activation optimization studies.
+</p>
+</div>
+
+<div class="section">
+<h2>Top Friction Points</h2>
+
+<table>
+<tr>
+<th>Friction</th>
+<th>Why It Matters</th>
+<th>Business Risk</th>
+</tr>
+
+<tr>
+<td>Login Before Value</td>
+<td>Users must share phone number before seeing restaurants.</td>
+<td>High onboarding abandonment.</td>
+</tr>
+
+<tr>
+<td>Permission Fatigue</td>
+<td>Generic location popup appears before trust formation.</td>
+<td>Lower location opt-in rate.</td>
+</tr>
+
+<tr>
+<td>Checkout Complexity</td>
+<td>Too many fields during highest-intent moment.</td>
+<td>Cart abandonment increase.</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Improved PM Recommendations</h2>
+
+<h3>1. Browse Before Login <span class="badge">P0</span></h3>
+<p>
+Allow users to browse restaurants before OTP verification. Move authentication closer to checkout intent.
+</p>
+
+<div class="callout">
+<strong>Expected Impact:</strong> Faster aha moment, reduced onboarding friction, improved activation rate.
+</div>
+
+<h3>2. Value-Framed Permission Prompt <span class="badge">P0</span></h3>
+<p>
+Add a branded pre-permission screen explaining why location improves delivery speed and restaurant relevance.
+</p>
+
+<div class="callout">
+<strong>Expected Impact:</strong> Higher location permission acceptance rate.
+</div>
+
+<h3>3. Simplified First Checkout <span class="badge">P1</span></h3>
+<p>
+Enable auto-filled addresses and default Cash on Delivery for first-time users.
+</p>
+
+<div class="callout">
+<strong>Expected Impact:</strong> Reduced first-order checkout abandonment.
+</div>
+</div>
+
+<div class="section">
+<h2>A/B Testing Plan</h2>
+
+<table>
+<tr>
+<th>Component</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>Experiment</td>
+<td>Deferred Login Flow</td>
+</tr>
+
+<tr>
+<td>Hypothesis</td>
+<td>Browsing before authentication increases activation.</td>
+</tr>
+
+<tr>
+<td>Primary Metric</td>
+<td>Activation Rate</td>
+</tr>
+
+<tr>
+<td>Secondary Metrics</td>
+<td>Restaurant Feed Reach, Add-to-Cart Rate</td>
+</tr>
+
+<tr>
+<td>Guardrail Metrics</td>
+<td>Bounce Rate, Fraud Rate</td>
+</tr>
+
+<tr>
+<td>Runtime</td>
+<td>2 Weeks</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Product Management Takeaway</h2>
+
+<div class="callout">
+The highest-performing onboarding systems reduce effort until users experience clear product value. Swiggy currently prioritizes data collection before value realization, creating unnecessary activation friction in the earliest stages of the funnel.
+</div>
+
+<p>
+This audit demonstrates:
+</p>
+
+<ul>
+<li>Activation funnel analysis</li>
+<li>User psychology reasoning</li>
+<li>Product prioritization</li>
+<li>Experiment design thinking</li>
+<li>Business impact framing</li>
+<li>Structured PM communication</li>
+</ul>
+
+</div>
+
+</div>
+
+</body>
+</html>
